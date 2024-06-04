@@ -3,16 +3,13 @@
 	"env": { },
 	"builds": [
 		{
-			"src": "index.js",
+			"src": "kaeonUnitedSingularityBootstrap.js",
 			"use": "@vercel/node",
 			"config": { "includeFiles": ["./**"] }
 		}
 	],
-	"routes": [
-		{
-			"src": "/",
-			"dest": "index.js"
-		}
+	"rewrites": [
+		{ "source": "/(.*)", "destination": "/" }
 	],
 	"installCommand": "npm install"
 }
