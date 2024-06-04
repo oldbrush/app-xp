@@ -3,7 +3,7 @@
 	"env": { },
 	"builds": [
 		{
-			"src": "kaeonUnitedSingularityBootstrap.js",
+			"src": "index.js",
 			"use": "@vercel/node",
 			"config": { "includeFiles": ["./**"] }
 		}
